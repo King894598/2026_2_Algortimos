@@ -16,4 +16,11 @@ public class Fisico extends Cliente{
                 super.toString() + "\n" +
                 "CPF: " + cpf;
     }
+
+    @Override
+    public void cadastrar() {
+
+    }
+
+
 }

@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 public class Juridico extends Cliente{
     public String cnpj;
 
@@ -7,6 +9,9 @@ public class Juridico extends Cliente{
 
     @Override
     public void cadastrar() {
+        this.nome = JOptionPane.showInputDialog("Nome do Cliente Jurídico: ");
+        this.cnpj = JOptionPane.showInputDialog("CNPJ: ");
+        this.fone = JOptionPane.showInputDialog("Telefone: ");
 
     }
 

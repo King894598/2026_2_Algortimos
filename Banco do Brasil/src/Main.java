@@ -15,14 +15,15 @@ public class Main {
         String txt = "Qual tipo de cliente \n1)Físico \n2)Jurídico:";
         int tipoCli = Integer.parseInt(JOptionPane.showInputDialog(txt));
         Cliente client = null;
-        String nome = JOptionPane.showInputDialog("Nome do Cliente;");
+
         if(tipoCli == 1) {
-            String cpf = JOptionPane.showInputDialog("CPF:");
-            client = new Fisico(nome, cpf);
+            client = new Fisico();
+
         }else {
-            String cnpj = JOptionPane.showInputDialog("CNPJ:");
-            client = new Juridico(nome, cnpj);
+
+            client = new Juridico();
         }
+        client.cadastrar();
 
         Conta c1 = new Conta();
         c1.titular = client;

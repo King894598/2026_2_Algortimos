@@ -1,6 +1,14 @@
 import javax.swing.*;
 
 public class Main {
+
+    public static int menu(){
+        String txt = "1) Adicionar Produto \n"
+                   + "2) Imprimir lista \n"
+                   + "3) Remover último \n"
+                   + "0) Sair \n\n";
+    }
+
     public static void main(String[] args) {
         Lista listProd = new Lista();
 

@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.util.ArrayList;
 
 public class Lista {
@@ -23,5 +24,6 @@ public class Lista {
             // txt = txt.concat(prod.toString() + "\n");
             txt += prod.toString() + "\n";
         }
+        JOptionPane.showMessageDialog(null, txt);
     }
 }

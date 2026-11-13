@@ -6,7 +6,9 @@ public class Main {
         String txt = "1) Adicionar Produto \n"
                    + "2) Imprimir lista \n"
                    + "3) Remover último \n"
-                   + "0) Sair \n\n";
+                   + "0) Sair \n\n"
+                   + "Digite sua opção: ";
+        return Integer.parseInt(JOptionPane.showInputDialog(txt));
     }
 
     public static void main(String[] args) {

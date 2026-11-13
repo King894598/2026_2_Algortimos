@@ -13,6 +13,8 @@ public class Main {
 
         listProd.add(new Produto("Chocolate", 2));
 
+        listProd.imprimir();
+
         // listProd.add(new Produto());
         }
     }

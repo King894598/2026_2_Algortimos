@@ -16,4 +16,11 @@ public class Lista {
         }
         return false;
     }
+
+    public void imprimir(){
+        String txt = "";
+        for(Produto prod: this.produtos){
+            txt += prod.nome;
+        }
+    }
 }

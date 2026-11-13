@@ -20,7 +20,7 @@ public class Lista {
     public void imprimir(){
         String txt = "";
         for(Produto prod: this.produtos){
-            txt += prod.nome;
+            txt = txt.concat(prod.toString());
         }
     }
 }
